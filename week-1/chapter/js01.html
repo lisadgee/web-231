@@ -9,7 +9,7 @@
       Tinley Xeriscapes
       Plants web page
       Author: Lisa Gee
-      Date: 3/22/24 
+      Date: 3/25/24 
 
       Filename: js01.html
    -->
@@ -20,6 +20,7 @@
    <link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="tinley.css" />
    <link href="http://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet" type="text/css">
 </head>
+
 <body>
    <div id="container">
       <header>
@@ -30,6 +31,7 @@
             tinley xeriscapes
          </h1>
       </header>
+
       <nav>
          <ul>
             <li><a href="#">About Xeriscaping</a></li>
@@ -37,23 +39,39 @@
             <li><a href="#">See Our Work</a></li>
             <li><a href="#">Get An Estimate</a></li>
          </ul>
-      </nav>  
+      </nav>
+        
       <aside>
          <ul>
-            <li id="blanket">Blanket Flower</li>
-            <li id="rugosa">Hedge Rose</li>
-            <li id="bluestem">Little Bluestem</li>
+            <li onclick="document.getElementById ('plantImg').src = blanket" id="blanket">Blanket Flower</li>
+            <li onclick = "document.getElementById ('plantImg').src = rugosa" id="rugosa">Hedge Rose</li>
+            <li onclick="document.getElementById ('plantImg').src = bluestem" id="bluestem">Little Bluestem</li>
          </ul>
-      </aside>    
+      </aside>
+    
       <article>   
          <figure>
             <img src="#" alt="" title="" id="plantImg" />         
-            <figcaption id="imgCaption">
-                <script>
-                </script>            
+            <figcaption id="imgCaption">  
+               <script>
+                  /*
+                  Information on available plants
+                  including link to USDA website
+                  */
+                  document.write("<p>Plant choices for " );
+                  document.write("<a href= 'http://planthardiness.ars.usda.gov'>");
+                  document.write("hardiness zones</a>");
+                  document.write(" 5a - 6b </p>");
+                  // hardiness zones for Chicago and surrounding area
+                  //define variables containing plan file names
+                  let blanket = "blanket.jpg";
+                  let bluestem = "bluestem.jpg";
+                  let rugosa = "rugosa.jpg";
+               </script>          
             </figcaption>
          </figure>       
-      </article>  
+      </article>
+    
       <footer>
          <p>Tinley Xeriscapes &bull; Tinley Park, IL 60477</p>
       </footer>
