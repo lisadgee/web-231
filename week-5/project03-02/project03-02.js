@@ -9,6 +9,7 @@
       Filename: project03-02.js
 */
 
+// Create new array of captions for imgs
 let captions = new Array(14);
 captions[0]="International Space Station fourth expansion [2009]";
 captions[1]="Assembling the International Space Station [1998]";
@@ -20,9 +21,20 @@ captions[6]="The International Space Station first expansion [2002]";
 captions[7]="Hurricane Ivan from the ISS [2008]";
 captions[8]="The Soyuz spacecraft approaches the ISS [2005]";
 captions[9]="The International Space Station from above [2006]";
-captions[10]="Maneuvering in space with the Canadarm2 [2006]";
+captions[10]="Maneuvering in space with the Canada [2006]";
 captions[11]="The International Space Station second expansion [2006]";
 captions[12]="The International Space Station third expansion [2007]";
 captions[13]="The ISS over the Ionian Sea [2007]";
 
+// Declare variable - empty string
+let htmlCode = "";
 
+// Iterate thru array and write to html code
+for (let i = 0; i < captions.length; i++) {
+   htmlCode += "<figure>";
+   htmlCode += "<img alt='' src='slide" + i + ".jpg' />";
+   htmlCode += "<figcaption>" + captions[i] + "</figcaption>";
+   htmlCode += "</figure>";
+}
+// Dump elements with 'gallery id' into the htmlCode variable
+document.getElementById("gallery").innerHTML = htmlCode;
