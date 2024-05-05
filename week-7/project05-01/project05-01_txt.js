@@ -4,8 +4,8 @@
       Project 05-01
 
       Project to present an online quiz with a countdown clock
-      Author: 
-      Date:   
+      Author: Lisa Gee
+      Date: 5/2/24 
 
       Filename: project05-01.js
 */
