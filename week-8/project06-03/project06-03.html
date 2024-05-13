@@ -15,6 +15,8 @@
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <title>Hands-on Project 6-3</title>
    <link rel="stylesheet" href="styles.css" />
+   <!-- Do not run script until page loads -->
+   <script link src="project06-03.js" defer></script>
 </head>
 
 <body>
@@ -27,6 +29,7 @@
    <article>
       <h1>Checkout</h1>
       <form id="billShip" name="billShip" method="get" action="formsubmit.html">
+        <!-- First form (col) -->
          <section>
             <legend>Shipping Address</legend>
             <fieldset id="shipping">
@@ -47,6 +50,7 @@
                <label for="cityShip">City <span>*</span></label>
                <input type="text" required id="cityShip" name="cityShip"   />   
                
+               <!-- Pulldown menu for states -->
                <label for="stateShip">State <span>*</span></label>
                <select id="stateShip" name="stateShip">
                   <option value="AL">Alabama</option>
@@ -110,6 +114,7 @@
             </fieldset>
          </section>
          
+         <!-- Second form (col) -->
          <section>
             <legend>Billing Address</legend>
             <fieldset id="billing">
@@ -132,6 +137,7 @@
                <label for="cityBill">City <span>*</span></label>
                <input type="text" required id="cityBill" name="cityBill"/>   
                
+               <!-- Pulldown menu for states -->
                <label for="stateBill">State <span>*</span></label>
                <select id="stateBill" name="stateBill">
                   <option value="AL">Alabama</option>
